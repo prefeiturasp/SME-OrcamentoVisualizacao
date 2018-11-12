@@ -1,6 +1,0 @@
-{
-    "name": "quant",
-    "children": [
-      {"name": "alunos", "size": 1300000}
-    ]
-}

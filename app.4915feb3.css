@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Heebo');
-@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
-
+@import url(https://fonts.googleapis.com/css?family=Heebo);
+@import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
 body {
   margin: 0;
   min-height: 100vh;
@@ -23,12 +22,17 @@ body {
 .navbar-wrapper {
   height: 30px;
   padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .navbar img {
   height: 30px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .menu-toggle {
@@ -40,7 +44,8 @@ body {
 .menu-toggle img {
   height: 30px;
   width: 30px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .menu {
@@ -54,9 +59,12 @@ body {
   background: #444;
   color: #fff;
   padding: 10px 20px;
+  -webkit-transition: visibility 0s, opacity 0.25s linear;
+  -o-transition: visibility 0s, opacity 0.25s linear;
   transition: visibility 0s, opacity 0.25s linear;
   border-bottom: 1px #333 solid;
-  box-shadow: 0px 2px #fff;
+  -webkit-box-shadow: 0px 2px #fff;
+          box-shadow: 0px 2px #fff;
 }
 .show {
   visibility: visible;
@@ -132,9 +140,14 @@ body {
 #interactive {
   height: calc(100vh - 10px - 50px);
   border: 5px solid #333;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: transparent;
   padding: 0 50px 0 25px;
   margin: 5px;
@@ -144,9 +157,16 @@ body {
 .full-section {
   min-height: calc(100vh - 50px);
   margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background: #444;
   color: #fff;
   padding: 0 50px 0 25px;
@@ -162,7 +182,8 @@ body {
 }
 .img-responsive {
   width: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .text-center {
   text-align: center;
@@ -174,6 +195,8 @@ body {
 .footer-logos {
   margin-top: 50px;
   border-top: 1px solid #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .footer-logos img {
@@ -192,3 +215,6 @@ body {
     padding: 0.4em 0.6em;
   }
 }
+
+
+/*# sourceMappingURL=app.4915feb3.css.map*/
