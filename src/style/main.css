@@ -48,8 +48,13 @@ body {
   font-weight: 600;
   margin: 10px;
   position: absolute;
-  right: 135px;
+  right: 140px;
   top: 0;
+}
+
+.menu-toggle .home {
+  margin: -25px 0 0 -27px;
+  position: absolute;
 }
 
 .menu-toggle ul {
@@ -207,7 +212,8 @@ body {
 }
 
 .full-section-row {
-  max-width: 1000px;
+  max-width: 1060px;
+  text-align: center;
 }
 
 .full-section-row p {

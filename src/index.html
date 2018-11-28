@@ -19,6 +19,7 @@
         </div>
         <div class="menu-toggle">
           <ul>
+            <li><a href="javascript:rolarInicio();"><img src="assets/images/icone_seta-03.png" class="home" alt="Voltar ao início" /></a></li>
             <li><a href="#a-s04">Funcionamento</a></li>
             <li><a href="#a-s05">Parcerias</a></li>
             <li><a href="#a-s06">Alimentação</a></li>
@@ -37,7 +38,8 @@
 
       <div id="intro" class="full-section">
         <div class="full-section-row">
-          <h1 class="text-center">Entenda como se dividem os recursos da educação na cidade</h1>
+          <h1 class="text-center">Orçamento explicado</h1>
+          <p>Entenda como se dividem os recursos da educação na cidade.</p>
           <p>Todos os dias, as portas das escolas da rede municipal de ensino de São Paulo se abrem para quase um milhão de bebês, crianças, adolescentes, jovens e adultos. Com números tão expressivos, é natural que também seja grande o orçamento usado para manter toda essa estrutura. Em 2017, a Administração Municipal investiu 10,2 bilhões de reais em Educação, ou um quinto de todo orçamento da Prefeitura.</p>
           <p>Na primeira fase do projeto "Livro Aberto", a Secretaria Municipal da Educação apresenta uma visualização interativa para mostrar como o orçamento foi gasto em 2017, ou seja, é uma fotografia para explicar as divisões e permitir as primeiras comparações. Nos próximos meses, serão lançadas ferramentas para que seja possível consultar cada despesa, até chegar ao detalhe de cada escola e região.</p>
           <p>
@@ -76,6 +78,10 @@
         </div>
     </div>
     <script>
+      function rolarInicio() {
+        window.scroll(0, findPos(document.getElementById("intro"))-300);
+      }
+
       function rolarPagina() {
         window.scroll(0, findPos(document.getElementById("text"))-300);
       }
