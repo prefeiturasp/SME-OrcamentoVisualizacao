@@ -196,11 +196,13 @@ body {
 
 .full-section .rolar-pagina {
   background: url(/public/assets/images/icone_rolarpagina-01.png) center center no-repeat;
+  color: #fff;
   display: block;
   font-size: 1.5em;
   height: 79px;
   margin: 0 auto;
   padding: 20px 0 0;
+  text-decoration: none;
   width: 353px;
 }
 
@@ -218,6 +220,7 @@ body {
 }
 
 .text-center {
+  display: block;
   text-align: center;
   font-family: 'Permanent Marker', cursive;
 }

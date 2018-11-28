@@ -43,8 +43,8 @@
           <p>
           </br>
           </p>
-          <div class="text-center rolar-pagina">Role a página e explore</div>
-          <div class="text-center"><img src="assets/images/icone_rolarpagina-02.png" alt="Role a página e explore" /></div>
+          <a href="javascript:rolarPagina();" class="text-center rolar-pagina">Role a página e explore</a>
+          <a href="javascript:rolarPagina();" class="text-center"><img src="assets/images/icone_rolarpagina-02.png" alt="Role a página e explore" /></a>
         </div>
       </div>
 
@@ -75,5 +75,20 @@
           </div>
         </div>
     </div>
+    <script>
+      function rolarPagina() {
+        window.scroll(0, findPos(document.getElementById("text"))-300);
+      }
+
+      function findPos(obj) {
+      var curtop = 0;
+        if (obj.offsetParent) {
+            do {
+                curtop += obj.offsetTop;
+            } while (obj = obj.offsetParent);
+          return [curtop];
+        }
+      }
+    </script>
   </body>
 </html>
