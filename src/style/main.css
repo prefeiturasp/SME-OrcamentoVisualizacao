@@ -194,6 +194,16 @@ body {
   margin-top: 95px;
 }
 
+.full-section .rolar-pagina {
+  background: url(/public/assets/images/icone_rolarpagina-01.png) center center no-repeat;
+  display: block;
+  font-size: 1.5em;
+  height: 79px;
+  margin: 0 auto;
+  padding: 20px 0 0;
+  width: 353px;
+}
+
 .full-section-row {
   max-width: 1000px;
 }
