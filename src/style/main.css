@@ -14,7 +14,7 @@ body {
   background: #005653;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
   color: #fff;
-  height: 98px;
+  height: 100px;
   left: 0;
   position: fixed;
   top: 0;
@@ -22,39 +22,75 @@ body {
   z-index: 1000;
 }
 
+@media (min-width: 320px) and (max-width: 590px) {
+  .navbar {
+    height: 155px;
+  }
+  .full-section {
+    margin-top: 155px !important;
+  }
+}
+
 .navbar-wrapper {
   height: 30px;
   padding: 10px;
   display: flex;
-  justify-content: center;
+  max-width: 1080px;
+  margin: 0 auto;
 }
 
-.navbar-wrapper a {
+.navbar-wrapper .logo {
+  flex: 0 0 80%;
+  max-width: 80%;
+}
+
+.navbar-wrapper .logo .logo_patio {
+  float: left;
+  margin-right: 15px;
+  margin-top: 10px;
+}
+
+.navbar-wrapper .logo .logo_patio img {
+  display: inline-block;
+  float: none;
+  max-height: 55%;
+  max-width: 200px;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+
+.navbar-wrapper .linha-separador {
+  background: url(/public/assets/images/line_1.png);
   display: block;
-  width: 1080px;
+  float: left;
+  height: 42px;
+  margin-top: 8px;
+  width: 10px;
 }
 
-.navbar img {
-  height: 78px;
+.navbar-wrapper .logo .logo_livro {
+  float: left;
+  margin-left: 10px;
+  margin-top: 16px;
+}
+
+.navbar-wrapper .logo .logo_livro img {
+  max-height: 45%;
+  max-width: 100%;
   object-fit: contain;
 }
 
-#menu-toggle {
-  display: none;
+.navbar-wrapper .menu-toggle {
+  flex: 0 0 20%;
+  margin-top: 30px;
+  max-width: 20%;
+  text-align: right;
 }
 
-.menu-toggle {
-  font-family: "Open Sans", Arial, sans-serif;
-  font-weight: 600;
-  margin: 10px;
-  position: absolute;
-  right: 140px;
-  top: 0;
-}
-
-.menu-toggle .home {
-  margin: -25px 0 0 -27px;
-  position: absolute;
+.navbar-wrapper .menu-toggle a {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
 }
 
 .menu-toggle ul {
@@ -100,6 +136,10 @@ body {
   opacity: 1;
 }
 
+.menu {
+  margin-top: 10px;
+}
+
 .menu li {
   list-style: none;
   font-size: 1.5em;
@@ -108,6 +148,7 @@ body {
 
 .menu a {
   color: #fff;
+  text-decoration: none;
 }
 
 .chart-wrapper {
@@ -190,17 +231,17 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background: url(/public/assets/images/f1_banner.png) top center no-repeat;
+  background: url(/public/assets/images/f1_banner.png) center center no-repeat;
+  background-size: cover;
   color: #fff;
   padding: 0 50px 0 25px;
-  margin-top: 5px;
   z-index: 300;
   position: relative;
   margin-top: 95px;
 }
 
 .full-section .rolar-pagina {
-  background: url(/public/assets/images/icone_rolarpagina-01.png) center center no-repeat;
+  background: url(/public/assets/images/icone_rolarpagina-011-02.png) center center no-repeat;
   color: #fff;
   display: block;
   font-size: 1.5em;
@@ -227,8 +268,26 @@ body {
 
 .text-center {
   display: block;
-  text-align: center;
   font-family: 'Permanent Marker', cursive;
+  font-size: 2.5em;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.text-center-sub {
+  font-weight: normal;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.sep-pontos {
+  margin-bottom: -5px;
+  margin-top: 10px;
+}
+
+.sep-pontos img {
+  max-height: 27px;
+  width: 4%;
 }
 
 .footer-logos {
