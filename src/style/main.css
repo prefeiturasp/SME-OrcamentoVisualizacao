@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Heebo');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
 
 body {
@@ -20,20 +19,6 @@ body {
   top: 0;
   width: 100%;
   z-index: 1000;
-}
-
-@media (min-width: 320px) and (max-width: 1030px) {
-  .navbar-wrapper .logo .logo_livro img {
-    margin-top: 5px !important;
-    max-height: 25px !important;
-  }
-  .navbar-wrapper .logo .logo_patio img {
-    max-height: 55px !important;
-  }
-  .navbar-wrapper .center-items {
-    margin-top: 25px !important;
-    max-width: 100% !important;
-  }
 }
 
 .navbar-wrapper {
@@ -309,17 +294,105 @@ body {
   width: 5%;
 }
 
-.footer-logos {
-  margin-top: 50px;
-  border-top: 1px solid #fff;
-  display: flex;
+.footer {
+  color: #fff;
+  display: block;
+  font-size: 16pt;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 300;
+  width: 100%;
 }
 
-.footer-logos img {
-  width: 100%;
-  max-width: 400px;
-  padding: 20px;
-  margin: auto;
+.footer .row {
+  margin: 0 auto;
+  max-width: 1080px;
+}
+
+.footer .verde {
+  background: #007A7A;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.footer .verde h1 {
+  font-size: 1.5em;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+.footer .verde .botao-conheca {
+  border: 2px solid #fff;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.7em;
+  padding: 0.3em 1em;
+  position: relative;
+  text-decoration: none;
+}
+
+.footer .verde .botao-conheca:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid transparent;
+  color: #fff;
+}
+
+.footer .logos {
+  background: #171717;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer .logos .row {
+  display: -webkit-flex;
+  display: flex;
+  align-items: flex-start;
+}
+
+.footer .logos a {
+  display: inline-block;
+  flex: 1;
+}
+
+.footer .logos a .logo-unesco {
+  height: auto;
+  max-width: 250px;
+}
+
+.footer .logos a .logo-fgv {
+  height: auto;
+  max-width: 250px;
+}
+
+.footer .logos a .logo-sme {
+  height: auto;
+  max-width: 180px;
+}
+
+@media (min-width: 320px) and (max-width: 1030px) {
+  .navbar-wrapper .logo .logo_livro img {
+    margin-top: 5px !important;
+    max-height: 25px !important;
+  }
+  .navbar-wrapper .logo .logo_patio img {
+    max-height: 55px !important;
+  }
+  .navbar-wrapper .separador {
+    margin: 0;
+    visibility: hidden;
+  }
+  .navbar-wrapper .center-items {
+    margin-top: 25px !important;
+    max-width: 100% !important;
+  }
+  .footer .logos .row {
+    display: block;
+  }
 }
 
 @media only screen and (max-width : 992px) {
