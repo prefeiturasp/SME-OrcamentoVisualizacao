@@ -132,7 +132,7 @@ body {
 }
 
 .menu {
-  margin-top: 10px;
+  margin-top: 50px;
 }
 
 .menu li {
@@ -254,7 +254,8 @@ body {
 }
 
 .full-section-row {
-  max-width: 1060px;
+  margin-left: 20px;
+  max-width: 1080px;
   text-align: center;
 }
 
@@ -313,14 +314,14 @@ body {
 
 .footer .verde {
   background: #007A7A;
-  padding: 30px 0;
+  padding: 40px 0;
   text-align: center;
 }
 
 .footer .verde h1 {
   font-size: 1.5em;
   font-weight: normal;
-  margin: 0;
+  margin: 0 0 0.5em;
   padding: 0;
 }
 
@@ -355,6 +356,7 @@ body {
 }
 
 .footer .logos a {
+  cursor: default;
   display: inline-block;
   flex: 1;
 }
@@ -374,21 +376,51 @@ body {
   max-width: 180px;
 }
 
-@media (min-width: 320px) and (max-width: 1030px) {
+@media (min-width: 320px) and (max-width: 570px) {
   .navbar-wrapper .logo .logo_livro img {
-    margin-top: 5px !important;
-    max-height: 25px !important;
+    margin-top: 10px;
+    max-height: 18px;
   }
   .navbar-wrapper .logo .logo_patio img {
-    max-height: 55px !important;
+    margin-top: 7px;
+    max-height: 40px;
   }
   .navbar-wrapper .separador {
-    margin: 0;
-    visibility: hidden;
+    height: 35px;
+    width: 8px;
   }
   .navbar-wrapper .center-items {
-    margin-top: 25px !important;
-    max-width: 100% !important;
+    margin-top: 25px;
+    max-width: 100%;
+  }
+  .text-center {
+    font-size: 1.5em;
+    margin-bottom: 0;
+    margin-top: 30px
+  }
+  .text-center-sub {
+    font-size: 0.9em;
+  }
+  .sep-pontos {
+    margin: 5px 0 7px;
+  }
+  .sep-pontos img {
+    width: 8%;
+  }
+  .full-section div {
+    font-size: 0.85em;
+  }
+  .full-section .rolar-pagina {
+    background: url(/public/assets/images/icone_rolarpagina_menor.png) center center no-repeat;
+    font-size: 1.3em !important;
+    height: 71px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    width: 301px;
+  }
+  .footer .verde h1 {
+    line-height: 1em;
+    margin-bottom: 1em;
   }
   .footer .logos .row {
     display: block;
