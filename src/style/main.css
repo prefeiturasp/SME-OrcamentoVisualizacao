@@ -425,6 +425,12 @@ body {
   .footer .logos .row {
     display: block;
   }
+  .footer .logos a {
+    margin-top: 20px;
+  }
+  .footer .logos a:first-child {
+    margin-top: 0;
+  }
 }
 
 @media only screen and (max-width : 992px) {
