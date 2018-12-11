@@ -54,7 +54,7 @@ body {
 }
 
 .navbar-wrapper .separador {
-  background: url(/public/assets/images/line.png);
+  background: url(/assets/images/line.png);
   display: block;
   float: left;
   height: 42px;
@@ -222,7 +222,7 @@ body {
 
 .full-section {
   align-items: center;
-  background: url(/public/assets/images/f1_bannergiz.jpg) center center no-repeat;
+  background: url(/assets/images/f1_bannergiz.jpg) center center no-repeat;
   background-size: cover;
   color: #fff;
   display: flex;
@@ -236,7 +236,7 @@ body {
 }
 
 .full-section .rolar-pagina {
-  background: url(/public/assets/images/icone_rolarpagina.png) center center no-repeat;
+  background: url(/assets/images/icone_rolarpagina.png) center center no-repeat;
   color: #fff;
   display: block;
   font-size: 1.2em;
@@ -411,7 +411,7 @@ body {
     font-size: 0.85em;
   }
   .full-section .rolar-pagina {
-    background: url(/public/assets/images/icone_rolarpagina_menor.png) center center no-repeat;
+    background: url(/assets/images/icone_rolarpagina_menor.png) center center no-repeat;
     font-size: 1.3em !important;
     height: 71px;
     margin-bottom: 10px;
