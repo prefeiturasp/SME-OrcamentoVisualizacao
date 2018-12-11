@@ -1,0 +1,477 @@
+@import url(https://fonts.googleapis.com/css?family=Heebo);
+@import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
+body {
+  margin: 0;
+  min-height: 100vh;
+  overflow: -moz-scrollbars-vertical;
+  overflow-y: scroll;
+  font-family: 'Heebo', sans-serif;
+}
+
+.navbar {
+  background: #005653;
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  color: #fff;
+  height: 100px;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar-wrapper {
+  height: 30px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.navbar-wrapper .center-items {
+  height: 70px;
+  margin: 5px auto 0;
+  max-width: 50%;
+}
+
+.navbar-wrapper .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 90%;
+          flex: 0 0 90%;
+  max-width: 90%;
+}
+
+.navbar-wrapper .logo .logo_patio {
+  display: block;
+  float: left;
+  height: 70px;
+}
+
+.navbar-wrapper .logo .logo_patio img {
+  max-height: 246px;
+  max-width: 218px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.navbar-wrapper .separador {
+  background: url(/public/assets/images/line.png);
+  display: block;
+  float: left;
+  height: 42px;
+  margin: 0 10px;
+  width: 10px;
+}
+
+.navbar-wrapper .logo .logo_livro {
+  display: block;
+  float: left;
+  height: 70px;
+}
+
+.navbar-wrapper .logo .logo_livro img {
+  margin-top: 10px;
+  max-height: 31px;
+  max-width: 205px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.navbar-wrapper .menu-toggle {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 10%;
+          flex: 0 0 10%;
+  margin-top: 30px;
+  max-width: 10%;
+  text-align: right;
+}
+
+.navbar-wrapper .menu-toggle a {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+}
+
+.menu-toggle ul {
+  list-style: none;
+  margin-top: 25px;
+}
+
+.menu-toggle ul li {
+  display: inline-block;
+  font-size: 14px;
+  padding: 0 10px;
+}
+
+.menu-toggle ul li a {
+  color: #abf0ed;
+  text-decoration: none;
+}
+
+.menu-toggle img {
+  height: 30px;
+  width: 30px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.menu {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  top: 50px;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background: #444;
+  color: #fff;
+  padding: 10px 20px;
+  -webkit-transition: visibility 0s, opacity 0.25s linear;
+  -o-transition: visibility 0s, opacity 0.25s linear;
+  transition: visibility 0s, opacity 0.25s linear;
+  border-bottom: 1px #333 solid;
+  -webkit-box-shadow: 0px 2px #fff;
+          box-shadow: 0px 2px #fff;
+}
+
+.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.menu {
+  margin-top: 50px;
+}
+
+.menu li {
+  list-style: none;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.chart-wrapper {
+  position: fixed;
+  left: 5px;
+  right: 5px;
+  top: 55px;
+  bottom: 5px;
+  font: 10px sans-serif;
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  top: calc(-50vh + 50px);
+  visibility: hidden;
+}
+
+.text {
+  z-index: 200;
+  position: relative;
+  padding: 0 50px 0 25px;
+  line-height: 1.15;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: #ffffff 4px 0px 0px, #ffffff 3.87565px 0.989616px 0px, #ffffff 3.51033px 1.9177px 0px, #ffffff 2.92676px 2.72656px 0px, #ffffff 2.16121px 3.36588px 0px, #ffffff 1.26129px 3.79594px 0px, #ffffff 0.282949px 3.98998px 0px, #ffffff -0.712984px 3.93594px 0px, #ffffff -1.66459px 3.63719px 0px, #ffffff -2.51269px 3.11229px 0px, #ffffff -3.20457px 2.39389px 0px, #ffffff -3.69721px 1.52664px 0px, #ffffff -3.95997px 0.56448px 0px, #ffffff -3.97652px -0.432781px 0px, #ffffff -3.74583px -1.40313px 0px, #ffffff -3.28224px -2.28625px 0px, #ffffff -2.61457px -3.02721px 0px, #ffffff -1.78435px -3.57996px 0px, #ffffff -0.843183px -3.91012px 0px, #ffffff 0.150409px -3.99717px 0px, #ffffff 1.13465px -3.8357px 0px, #ffffff 2.04834px -3.43574px 0px, #ffffff 2.83468px -2.82216px 0px, #ffffff 3.44477px -2.03312px 0px, #ffffff 3.84068px -1.11766px 0px, #ffffff 3.9978px -0.132717px 0px;
+  color: #333;
+}
+
+.text h1 {
+  font-weight: 400;
+}
+
+.text-paragraph {
+  margin-top: 50vh;
+  margin-bottom: 90vh;
+  max-width: 800px;
+}
+
+.text-category {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  text-shadow: none;
+  font-weight: bold;
+  color: #fff;
+  margin: 0;
+  padding: 0.5em 0.75em;
+  border-radius: 0.5em;
+}
+
+[data-stroke="outlined"] {
+  outline-color: #333;
+  outline-style: solid;
+  outline-width: 3px;
+  outline-offset: -3px;
+}
+
+#chart-wrapper-pmsp {
+  z-index: 1;
+}
+
+#chart-wrapper-sme {
+  z-index: 2;
+}
+
+#interactive {
+  height: calc(100vh - 10px - 50px);
+  border: 5px solid #333;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: transparent;
+  padding: 0 50px 0 25px;
+  margin: 5px;
+  pointer-events: none;
+}
+
+.full-section {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url(/public/assets/images/f1_bannergiz.jpg) center center no-repeat;
+  background-size: cover;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 16pt;
+  margin-top: 95px;
+  min-height: calc(100vh - 50px);
+  padding: 0 50px 0 25px;
+  position: relative;
+  z-index: 300;
+}
+
+.full-section .rolar-pagina {
+  background: url(/public/assets/images/icone_rolarpagina.png) center center no-repeat;
+  color: #fff;
+  display: block;
+  font-size: 1.2em;
+  height: 72px;
+  margin: 25px auto 0;
+  padding: 10px 0 0;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  width: 353px;
+}
+
+.full-section .rolar-pagina-seta {
+  margin-top: -20px;
+}
+
+.full-section-row {
+  margin-left: 20px;
+  max-width: 1080px;
+  text-align: center;
+}
+
+.full-section-row p {
+  font-size: 1.15em;
+}
+
+.img-responsive {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.text-center {
+  display: block;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2.2em;
+  font-weight: normal;
+  margin-bottom: -4px;
+  text-align: center;
+}
+
+.text-center-sub {
+  font-size: 18pt;
+  font-style: italic;
+  font-weight: normal;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.sep-pontos {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.sep-pontos img {
+  max-height: 27px;
+  width: 5%;
+}
+
+.footer {
+  color: #fff;
+  display: block;
+  font-size: 16pt;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 300;
+  width: 100%;
+}
+
+.footer .row {
+  margin: 0 auto;
+  max-width: 1080px;
+}
+
+.footer .verde {
+  background: #007A7A;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer .verde h1 {
+  font-size: 1.5em;
+  font-weight: normal;
+  margin: 0 0 0.5em;
+  padding: 0;
+}
+
+.footer .verde .botao-conheca {
+  border: 2px solid #fff;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.7em;
+  padding: 0.3em 1em;
+  position: relative;
+  text-decoration: none;
+}
+
+.footer .verde .botao-conheca:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid transparent;
+  color: #fff;
+}
+
+.footer .logos {
+  background: #171717;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer .logos .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.footer .logos a {
+  cursor: default;
+  display: inline-block;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.footer .logos a .logo-unesco {
+  height: auto;
+  max-width: 250px;
+}
+
+.footer .logos a .logo-fgv {
+  height: auto;
+  max-width: 250px;
+}
+
+.footer .logos a .logo-sme {
+  height: auto;
+  max-width: 180px;
+}
+
+@media (min-width: 320px) and (max-width: 570px) {
+  .navbar-wrapper .logo .logo_livro img {
+    margin-top: 10px;
+    max-height: 18px;
+  }
+  .navbar-wrapper .logo .logo_patio img {
+    margin-top: 7px;
+    max-height: 40px;
+  }
+  .navbar-wrapper .separador {
+    height: 35px;
+    width: 8px;
+  }
+  .navbar-wrapper .center-items {
+    margin-top: 25px;
+    max-width: 100%;
+  }
+  .text-center {
+    font-size: 1.5em;
+    margin-bottom: 0;
+    margin-top: 30px
+  }
+  .text-center-sub {
+    font-size: 0.9em;
+  }
+  .sep-pontos {
+    margin: 5px 0 7px;
+  }
+  .sep-pontos img {
+    width: 8%;
+  }
+  .full-section div {
+    font-size: 0.85em;
+  }
+  .full-section .rolar-pagina {
+    background: url(/public/assets/images/icone_rolarpagina_menor.png) center center no-repeat;
+    font-size: 1.3em !important;
+    height: 71px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    width: 301px;
+  }
+  .footer .verde h1 {
+    line-height: 1em;
+    margin-bottom: 1em;
+  }
+  .footer .logos .row {
+    display: block;
+  }
+  .footer .logos a {
+    margin-top: 20px;
+  }
+  .footer .logos a:first-child {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width : 992px) {
+  .text-paragraph h1 {
+    font-size: 1.5em;
+  }
+  .text-category {
+    padding: 0.4em 0.6em;
+  }
+}
+
+/*# sourceMappingURL=app.81182648.css.map*/
