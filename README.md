@@ -22,11 +22,12 @@ Nós somos o **pátio digital**, uma iniciativa da Secretaria Municipal de Educa
 
 ## Comunicação
 
-    | Canal de comunicação | Objetivos |
-    |----------------------|-----------|
-    | [Issues do Github](https://github.com/prefeiturasp/SME-OrcamentoVisualizacao/issues) | - Sugestão de novas funcionalidades<br> - Reportar bugs<br> - Discussões técnicas |
-    | [Telegram](https://t.me/patiodigital ) | - Comunicar novidades sobre os projetos<br> - Movimentar a comunidade<br>  - Falar tópicos que **não** demandem discussões profundas |
+| Canal de comunicação | Objetivos |
+|----------------------|-----------|
+| [Issues do Github](https://github.com/prefeiturasp/SME-PratoAberto-Frontend/issues) | - Sugestão de novas funcionalidades<br> - Reportar bugs<br> - Discussões técnicas |
+| [Telegram](https://t.me/patiodigital ) | - Comunicar novidades sobre os projetos<br> - Movimentar a comunidade<br>  - Falar tópicos que **não** demandem discussões profundas |
 
+Qualquer outro grupo de discussão não é reconhecido oficialmente.
 
 ## Como contribuir
 
