@@ -87,3 +87,5 @@ nosso [código de conduta](./CODEOFCONDUCT.md).
 
 - add GA
 - intro & conclusion links in menu
+
+Baseado no Readme do i-educar
