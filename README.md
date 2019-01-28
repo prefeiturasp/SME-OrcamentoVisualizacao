@@ -76,7 +76,7 @@ nosso [código de conduta](./CODEOFCONDUCT.md).
  `npm run test:watch`  irá executar os testes em todas as alterações.
 
 
-## References
+## Referências
 
 - http://bl.ocks.org/ganeshv/6a8e9ada3ab7f2d88022
 - https://bost.ocks.org/mike/treemap/
