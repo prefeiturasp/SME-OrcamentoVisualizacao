@@ -12,13 +12,18 @@ Nós somos o **pátio digital**, uma iniciativa da Secretaria Municipal de Educa
 1. [Sobre o Orçamento e visualização](#sobre-o-orçamento-e-visualização)
 2. [Comunicação](#comunicação)
 3. [Como contribuir](#como-contribuir)
-4. [Instalação](#instalação)
-5. [Referências](#referências)
+4. [Dependências](#depedências)
+5. [Instalação](#instalação)
+6. [Build e Deploy](#build-e-deploy)
+7. [Testes](#testes)
+8. [Repositórios relacionados](#repositórios-relacionados)
+9. [Referências](#referências)
 
 
 ## Sobre o orçamento e visualização
 
-    Orçamento e visualização é uma das 5 ferramentas do projeto Livro Aberto para dar transparência total aos recursos da educação.
+ Orçamento e visualização é uma das 5 ferramentas do projeto Livro Aberto para dar transparência total aos recursos da educação.
+ 
 
 ## Comunicação
 
@@ -29,6 +34,7 @@ Nós somos o **pátio digital**, uma iniciativa da Secretaria Municipal de Educa
 
 Qualquer outro grupo de discussão não é reconhecido oficialmente.
 
+
 ## Como contribuir
 
 Contribuições são **super bem vindas**! Se você tem vontade de construir o
@@ -38,44 +44,43 @@ ajudar a alcançar nossos objetivos. Lembrando que todos devem seguir
 nosso [código de conduta](./CODEOFCONDUCT.md).
 
 
+## Dependências 
+    
+[Node.js](http://nodejs.org/)
+
+
 ## Instalação
 
-### Dependências
-
-[Node.js](http://nodejs.org/) 
-
-
-### Desenvolvimento
-
-`npm install` no diretório raiz do aplicativo irá instalar tudo que você precisa para o desenvolvimento.
+`npm install` para instalar as dependências 
 
 `npm start` executará o servidor de desenvolvimento do aplicativo em [http://localhost:3000]
 
 
-### Build
+## Build & Deploy
 
-`npm run-script build`
+1.`npm run-script build`
 
-### Build & Deploy
+2.`npm run-script deploy`
 
-`npm run-script deploy`
+3.`npm run build` cria uma construção de produção por padrão.
+Para criar uma construção de desenvolvimento, defina a variável de ambiente `NODE_ENV` para` development` enquanto executa este comando.
 
-### Building
+4.`npm run clean` excluirá os recursos construídos.
 
-- `npm run build` cria uma construção de produção por padrão.
 
-   Para criar uma construção de desenvolvimento, defina a variável de ambiente `NODE_ENV` para` development` enquanto executa este comando.
+## Testes
 
-- `npm run clean` excluirá os recursos construídos.
+ `npm test`  executa os testes uma vez.
 
-### Rodar testes
+ `npm run test:coverage`  executa os testes e produziz um relatório de cobertura em `coverage/`.
 
- `npm test` irá executar os testes uma vez.
+ `npm run test:watch`  executa os testes em todas as alterações.
+ 
+ 
+## Repositórios relacionados
 
- `npm run test:coverage` irá executar os testes e produzir um relatório de cobertura em `coverage/`.
-
- `npm run test:watch`  irá executar os testes em todas as alterações.
-
+[Livro Aberto] https://github.com/prefeiturasp/SME-Livro-Aberto
+[Livro Aberto com Docker] https://github.com/prefeiturasp/SME-Livro-Aberto-Docker
 
 ## Referências
 
@@ -83,9 +88,5 @@ nosso [código de conduta](./CODEOFCONDUCT.md).
 - https://bost.ocks.org/mike/treemap/
 - https://bl.ocks.org/mbostock/4063423
 
-#### TODO
-
-- add GA
-- intro & conclusion links in menu
 
 Baseado no Readme do i-educar
