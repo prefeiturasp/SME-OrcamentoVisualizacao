@@ -56,7 +56,7 @@ nosso [código de conduta](./CODEOFCONDUCT.md).
 `npm start` executará o servidor de desenvolvimento do aplicativo em [http://localhost:3000]
 
 
-## Build & Deploy
+## Build e Deploy
 
 1.`npm run-script build`
 
@@ -79,8 +79,8 @@ Para criar uma construção de desenvolvimento, defina a variável de ambiente `
  
 ## Repositórios relacionados
 
-[Livro Aberto] https://github.com/prefeiturasp/SME-Livro-Aberto
-[Livro Aberto com Docker] https://github.com/prefeiturasp/SME-Livro-Aberto-Docker
+[Livro Aberto] (https://github.com/prefeiturasp/SME-Livro-Aberto)<br>
+[Livro Aberto com Docker] (https://github.com/prefeiturasp/SME-Livro-Aberto-Docker)
 
 ## Referências
 
