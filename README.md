@@ -12,7 +12,7 @@ Nós somos o **pátio digital**, uma iniciativa da Secretaria Municipal de Educa
 1. [Sobre o Orçamento e visualização](#sobre-o-orçamento-e-visualização)
 2. [Comunicação](#comunicação)
 3. [Como contribuir](#como-contribuir)
-4. [Dependências](#depedências)
+4. [Dependências](#dependências)
 5. [Instalação](#instalação)
 6. [Build e Deploy](#build-e-deploy)
 7. [Testes](#testes)
@@ -79,8 +79,8 @@ Para criar uma construção de desenvolvimento, defina a variável de ambiente `
  
 ## Repositórios relacionados
 
-[Livro Aberto] (https://github.com/prefeiturasp/SME-Livro-Aberto)<br>
-[Livro Aberto com Docker] (https://github.com/prefeiturasp/SME-Livro-Aberto-Docker)
+[Livro Aberto](https://github.com/prefeiturasp/SME-Livro-Aberto)<br>
+[Livro Aberto com Docker](https://github.com/prefeiturasp/SME-Livro-Aberto-Docker)
 
 ## Referências
 
